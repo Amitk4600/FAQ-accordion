@@ -23,7 +23,7 @@ body {
   padding: 10px;
   position: relative;
   border: 1px solid;
-  max-width: fit-content;
+  max-width: 40vw;
   width: 100%;
   border-radius: 10px;
   background: hsl(0, 0%, 100%);
@@ -43,6 +43,7 @@ body {
   /* padding: 0 11px; */
 }
 .top img {
+
   width: 2rem;
   height: 2rem;
 }
@@ -69,4 +70,30 @@ body {
 .accordion p{
     color: hsl(292, 16%, 49%);
     font-size: 14px;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 90vw; 
+    top: 4rem; 
+  }
+
+  .accordion {
+    max-width: 100%; 
+  }
+
+  .bg {
+    background-image: url("assets/images/background-pattern-mobile.svg");
+  }
+
+  .main {
+    padding: 0 16px; 
+  }
+
+  .top h1 {
+    font-size: 1.8rem; 
+  }
+
+  .accordion-summary h4 {
+    font-size: 0.9rem; 
+  }
 }
